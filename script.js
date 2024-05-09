@@ -11,7 +11,6 @@ function calculation() {
     } else if (document.getElementById("boundary").checked) {
       result = (width + height) * 2;
     }
-  
     document.getElementById("result").innerHTML = result || "&nbsp;";
   }
   
