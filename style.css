@@ -46,7 +46,7 @@ input[type=text] {
 input[type=text]:focus {
     border-color: black;
     outline-color: black;
-    animation: blink 1.3s linear;
+    animation: blink 1.3s linear infinite;
 }
 
 .label_name {
