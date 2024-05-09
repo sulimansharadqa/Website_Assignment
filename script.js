@@ -9,7 +9,7 @@ function calculation(){
         result = (width + height) * 2;
     }
     
-    document.getElementById('result').innerHTML = result || "0.0";
+    document.getElementById('result').innerHTML = result || "&nbsp;";
 }
 
 function clearFields(){
@@ -18,5 +18,5 @@ function clearFields(){
     document.getElementById('height').value = "";
     document.getElementById('boundary').checked = false;
     document.getElementById('area').checked = true;
-    document.getElementById('result').innerHTML = "0.0";
+    document.getElementById('result').innerHTML = "&nbsp;";
 }

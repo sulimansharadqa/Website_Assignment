@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Suliman Sharadgah</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
+
 <body>
     <div>
+        <div class="div">
         <h1>Rectangle Area and Boundary Computation</h1>
+        <div>
         <label class="label_name" for="stName">Student Name: </label>
-        <input type="text" id="stName" placeholder="Enter First Name">
-        <p></p>
-        <label class="label_width" for="width">Enter Width: </label>
-        <input type="text" id="width" placeholder="Enter Width Here">
-        <p></p>
-        <label class="label_height" for="height">Enter Height: </label>
-        <input type="text" id="height" placeholder="Enter Height Here">
-        <p></p>
-        <label class="label_result">Result=</label>
-        <label id="result">0.0</label>
-       <p></p>
-        <label class="label_select">Select:</label>
-        <input type="radio" name="selection" value="area" id="area" checked>
-        <label for="area" class="label_radio">Area</label>
-        <input type="radio" name="selection" value="boundary" id="boundary">
-        <label for="boundary" class="label_radio">Boundary</label>
-        <p></p>
-        <input type="button" onclick="calculation()" value="Compute" class="button1">
-        <input type="button" onclick="clearFields()" value="Clear" class="button2">
+        <input type="text" id="stName" placeholder="Enter First Name" autocomplete="off">
     </div>
-    
+        <div>
+            <label class="label_width" for="width">Enter Width: </label>
+            <input type="text" id="width" placeholder="Enter Width Here"  autocomplete="off">
+        </div>
+
+        <div>
+            <label class="label_height" for="height">Enter Height: </label>
+            <input type="text" id="height" placeholder="Enter Height Here"  autocomplete="off">
+        </div>
+        <div>
+            <label class="label_result">Result=</label>
+            <label id="result">&nbsp;</label>
+        </div>
+        <div >
+            <label class="label_select">Select:</label>
+            <div class="radios">
+            <input type="radio" name="selection" value="area" id="area" checked>
+            <label for="area" class="label_radio">Area</label>
+            <input type="radio" name="selection" value="boundary" id="boundary">
+            <label for="boundary" class="label_radio">Boundary</label>
+        </div>
+        </div>
+        <div class="buttons">
+            <input type="button" onclick="calculation()" value="Compute" class="button1">
+            <input type="button" onclick="clearFields()" value="Clear" class="button2">
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
