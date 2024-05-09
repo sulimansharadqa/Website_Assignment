@@ -2,9 +2,6 @@ function calculation() {
   var width = parseFloat(document.getElementById("width").value);
   var height = parseFloat(document.getElementById("height").value);
   var result;
-    if(document.getElementById('stName').value==null){
-        alert('Name is required')
-    }
   if (document.getElementById("area").checked) {
     result = width * height;
   } else if (document.getElementById("boundary").checked) {
