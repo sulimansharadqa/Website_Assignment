@@ -3,7 +3,7 @@ function calculation() {
   var width = parseFloat(document.getElementById("width").value);
   var height = parseFloat(document.getElementById("height").value);
   var result;
-  if(stName=='' && width=='' && height==''){
+  if(stName==='' && width==='' && height===''){
     alert('All fields are required')
   }else{
     if (document.getElementById("area").checked) {
