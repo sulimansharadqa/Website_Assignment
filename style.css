@@ -1,15 +1,13 @@
-body {
+body{
     display: flex;
     justify-content: center;
 }
-
-h1 {
+h1{
     background-color: #c0504d;
     padding: 4px 40px;
     width: fit-content;
 }
-
-label {
+label{
     display: inline-block;
     font-size: 20px;
     padding: 6px 6px;
@@ -18,8 +16,7 @@ label {
     height: 27px;
     width: 150px;
 }
-
-input[type=text] {
+input[type=text]{
     display: inline-block;
     height: 25px;
     border: solid black 3px;
@@ -28,44 +25,36 @@ input[type=text] {
     border-radius: 3px;
     text-align: center;
 }
-
-@keyframes blink {
-    50% {
-        opacity: 0.3;
+@keyframes blink{
+    50%{
+        opacity: 0.2;
         border-color: black;
         outline-color: black;
     }
-
-    80% {
+    80%{
         opacity: 1;
         border-color: black;
         outline-color: black;
     }
 }
-
-input[type=text]:focus {
+input[type=text]:focus{
     border-color: black;
     outline-color: black;
     animation: blink 1.3s linear infinite;
 }
-
-.label_name {
+.label_name{
     background-color: #b9cde5;
 }
-
-.label_width {
+.label_width{
     background-color: #00b050;
 }
-
-.label_height {
+.label_height{
     background-color: #00b050;
 }
-
-.label_result {
+.label_result{
     background-color: #ffff00;
 }
-
-#result {
+#result{
     border: solid black 3px;
     display: inline-block;
     padding: 4px;
@@ -76,50 +65,42 @@ input[type=text]:focus {
     border-radius: 3px;
     text-align: center;
 }
-
-.label_select {
+.label_select{
     background-color: #b3a2c7;
 }
-
-.radios {
+.radios{
     display: inline-block;
     text-align: center;
     justify-content: center;
 }
-
-input[type=radio] {
+input[type=radio]{
     transform: scale(1.7);
     margin-left: 110px;
 }
-
-.label_radio {
+.label_radio{
     width: fit-content;
     font-size: 20px;
 }
-
-.buttons {
+.buttons{
     text-align: center;
     margin-left: 140px;
 }
-
-.button1 {
+.button1{
     border: solid #a6a6a6 3px;
     font-size: 20px;
     padding: 2px 40px;
     background-color: #bfbfbf;
     margin-right: 40px;
-
+    
 
 }
-
-.button2 {
+.button2{
     border: solid #a6a6a6 3px;
     font-size: 20px;
     padding: 2px 55px;
     background-color: #bfbfbf;
 }
-
-input[type=button]:hover {
+input[type=button]:hover{
     cursor: pointer;
     background-color: #838383;
     border: solid #494949 3px;

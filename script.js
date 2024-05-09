@@ -1,14 +1,20 @@
 function calculation() {
+  var stName= document.getElementById('stName').value;
   var width = parseFloat(document.getElementById("width").value);
   var height = parseFloat(document.getElementById("height").value);
   var result;
-  if (document.getElementById("area").checked) {
-    result = width * height;
-  } else if (document.getElementById("boundary").checked) {
-    result = (width + height) * 2;
+  if(stName=='' && width=='' && height==''){
+    alert('All fields are required')
+  }else{
+    if (document.getElementById("area").checked) {
+      result = width * height;
+    } else if (document.getElementById("boundary").checked) {
+      result = (width + height) * 2;
+    }
+  
+    document.getElementById("result").innerHTML = result || "&nbsp;";
   }
-
-  document.getElementById("result").innerHTML = result || "&nbsp;";
+  
 }
 
 function clearFields() {
